@@ -39,20 +39,20 @@
 
             <!-- ================= LOGIN PANEL ================= -->
             <Grid x:Name="LoginPanel" Visibility="Visible" Margin="0,35,0,0">
-                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="18">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                     <!-- Logo Border with ImageBrush for Rounded Corners -->
                     <Border Width="100" Height="100" CornerRadius="20" BorderBrush="#252538" BorderThickness="1" HorizontalAlignment="Center">
                         <Border.Background>
-                            <ImageBrush ImageSource="icon.png" Stretch="UniformToFill" FallbackImageSource="pack://application:,,,/TrollRestoreWin;component/icon.png"/>
+                            <ImageBrush ImageSource="pack://application:,,,/TrollRestoreWin;component/icon.png" Stretch="UniformToFill"/>
                         </Border.Background>
                     </Border>
                     
-                    <StackPanel Spacing="4" HorizontalAlignment="Center">
+                    <StackPanel HorizontalAlignment="Center">
                         <TextBlock Text="mun-ai" FontSize="26" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
                         <TextBlock Text="Hệ thống xác thực thiết bị" FontSize="13" Foreground="#888888" HorizontalAlignment="Center"/>
                     </StackPanel>
 
-                    <StackPanel Spacing="6" HorizontalAlignment="Center">
+                    <StackPanel HorizontalAlignment="Center">
                         <TextBlock Text="Mật khẩu truy cập:" FontSize="12" FontWeight="SemiBold" Foreground="#888888" Margin="0,0,0,2"/>
                         <Border Background="#15FFFFFF" CornerRadius="8" Width="250" Height="36" Padding="8,2" BorderBrush="#252538" BorderThickness="1">
                             <PasswordBox x:Name="txtPassword" Background="Transparent" BorderThickness="0" Foreground="White" 
@@ -131,7 +131,7 @@
                     <TextBlock Grid.Row="0" Text="Hướng dẫn nhanh:" FontSize="13" FontWeight="Bold" Foreground="#888888" Margin="0,0,0,8"/>
                     
                     <!-- Checklist -->
-                    <StackPanel Grid.Row="1" Spacing="6" Margin="0,0,0,12">
+                    <StackPanel Grid.Row="1" Margin="0,0,0,12">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="✓" Foreground="#10B981" FontWeight="Bold" Margin="0,0,8,0"/>
                             <TextBlock Text="Đảm bảo iPhone/iPad đã kết nối bằng cáp USB và chọn 'Tin cậy' (Trust)." Foreground="#CDD6F4" FontSize="11"/>
