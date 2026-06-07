@@ -24,10 +24,6 @@
     <None Update="TrollRestore.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="dist\TrollRestore.exe">
-      <Link>TrollRestore.exe</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>
