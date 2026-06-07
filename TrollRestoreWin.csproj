@@ -9,6 +9,8 @@
     <ApplicationIcon />
     <Title>TrollStore Installer</Title>
     <Version>1.0.0</Version>
+    <AssemblyName>TrollRestoreWin</AssemblyName>
+    <RootNamespace>TrollRestoreWin</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
