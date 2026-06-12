@@ -1,6 +1,10 @@
 import sys
 import os
+import asyncio
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "lib"))
+
+if sys.platform == 'win32':
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 import platform
 import traceback
@@ -19,9 +23,6 @@ from sparserestore import backup, perform_restore
 
 
 def exit(code=0):
-    if platform.system() == "Windows" and getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
-        input("Press Enter to exit...")
-
     sys.exit(code)
 
 
